@@ -1,9 +1,15 @@
 {
   "Version": "2012-10-17",
-  "Statement":[{
-      "Effect": "Allow",
-      "Action": ["eks:Describe*", "ssm:GetParameters"],
-      "Resource":"*"
-  }]
- }
- 
+  "Statement": [
+      {
+          "Sid": "VisualEditor0",
+          "Effect": "Allow",
+          "Action": [
+              "ssm:*",
+              "eks:Describe*",
+              "eks:*"
+          ],
+          "Resource": "*"
+      }
+  ]
+}
